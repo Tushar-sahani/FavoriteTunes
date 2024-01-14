@@ -1,0 +1,64 @@
+
+body::before{
+    content: ''; 
+    background: url("../img/home.jpg") no-repeat center center/cover; 
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    width: 100vw; 
+    height: 100vh; 
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,.7);
+    width: 40%;
+    height: 90%;
+    border-radius: 10px;
+}
+.heading{
+    background-color: #ff5500;
+    opacity: 0.8;
+    position: relative;  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.heading a{
+    text-decoration: none;
+}
+
+h3{
+    font-weight: bolder;
+    color:rgb(33, 3, 3);
+}
+h3:hover{
+    color: white;
+}
+.song_section{
+    color: white;
+    padding: 40px;
+}
+.songs_item{
+    padding: 10px;
+}
+.songs_item span{
+    padding-left: 1px;
+}
+
+.artists_section{
+    color: white;
+    padding: 40px;
+    margin-top: -80px;
+}
+.artists_item{
+    padding: 15px;
+}
+.artists_item span{
+    padding-left: 1px;
+}
+

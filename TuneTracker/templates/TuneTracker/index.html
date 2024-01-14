@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %} {% static "css/style.css" %} {% endblock %}
+{% block body%}
+    <div class="home middle">
+        <div class="heading">
+            <a href="{% url 'songs'%}"> <h3>Songs</h3></a>
+            <a href="{% url 'artist'%}"> <h3>Artist</h3></a>
+        </div>
+        <div class="song_section ">
+            {% for song in songs%}
+                <div class="songs_item"><span>{{ forloop.counter }}. </span>{{song.title}}</div>
+            {% endfor %}
+        </div>
+        <div class="artists_section">
+            {% for artist in artists %}
+                <div class="artists_item"><span>{{ forloop.counter }}. </span>{{artist.name}}</div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

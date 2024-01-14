@@ -13,7 +13,7 @@ class Artist(models.Model):
     
 class Song(models.Model):
     title = models.CharField(max_length=30)
-    name = models.ForeignKey(Artist ,on_delete=models.CASCADE,null = False)
+    artist = models.ForeignKey(Artist ,on_delete=models.CASCADE,null = False)
 
     def __str__(self):
         return self.title
